@@ -5,7 +5,7 @@ const links = [
     },
     {
         name: "Dashboard",
-        url: "/Kanbas/Dashboard/screen.html",
+        url: "#",
     },
     {
         name: "Courses",
@@ -13,11 +13,11 @@ const links = [
     },
     {
         name: "Calendar",
-        url: "/Kanbas/Calendar/screen.html",
+        url: "#",
     },
     {
         name: "Inbox",
-        url: "/Kanbas/Inbox/screen.html",
+        url: "#",
     },
     {
         name: "History",
