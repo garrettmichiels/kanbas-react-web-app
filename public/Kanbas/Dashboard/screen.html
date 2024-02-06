@@ -3,37 +3,293 @@
     <link rel="stylesheet" href="/Kanbas/styles.css" />
     <link href="/libs/bootstrap/bootstrap.css" rel="stylesheet" />
     <link
-    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
 
     <link href="index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
   </head>
   <body>
     <table width="100%">
-        <tbody>
-          <tr>
-            <td valign="top" style="width: 80px">
-              <!-- copy the Kanbas Navigation in here. Only what's inside the body tag -->
-              <!-- here are the first few lines as an example -->
-              <ul class="wd-kanbas-navigation">
-                <li><a href="http://northeastern.edu">N</a></li>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <!-- copy the rest of the links here -->
-              </ul>
-            </td>
-            <td>
-              <!-- copy the Dashboard in here. Only what's inside the body tag -->
-              <!-- here are the first few lines as an example -->
-              <div class="p-4">
-                <h1>Dashboard</h1>
-                <!-- copy the rest in here -->
+      <tbody>
+        <tr>
+          <td valign="top" style="width: 80px; padding: 0px">
+            <ul class="wd-kanbas-navigation">
+              <li>
+                <a href="http://northeastern.edu"
+                  ><img src="/images/northeasternLogo.png" style="width: 60"
+                /></a>
+              </li>
+              <li>
+                <a href="/Kanbas/Account/Profile/screen.html"
+                  ><i class="fa-solid fa-circle-user" style="color: #f7f5ff"
+                    ><br
+                  /></i>
+                  Account</a
+                >
+              </li>
+              <li class="wd-active">
+                <a href="/Kanbas/Dashboard/screen.html"
+                  ><i class="fa fa-tachometer"></i> Dashboard</a
+                >
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Home/screen.html"
+                  ><i class="fa-solid fa-book"></i>Courses</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-calendar"></i>Calendar</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-inbox"></i><br />Inbox</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-clock"></i>History</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-play"></i><br />Studio</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ><br />Commons</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-question"></i><br />Help</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-comments"></i><br />Messages</a
+                >
+              </li>
+            </ul>
+          </td>
+          <td>
+            <div class="p-4">
+              <h1>Dashboard</h1>
+              <hr />
+              <h2>Published Courses (7)</h2>
+              <hr />
+              <div class="row">
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                  <div class="col" style="width: 300px">
+                    <div class="card">
+                      <img
+                        src="/images/overheadIsec.jpeg"
+                        class="card-img-top"
+                        style="max-height: 150px"
+                      />
+                      <div class="card-body">
+                        <a
+                          class="card-title"
+                          href="/Kanbas/Courses/Home/screen.html"
+                          style="
+                            text-decoration: none;
+                            color: navy;
+                            font-weight: bold;
+                          "
+                        >
+                          CS1234 React JS</a
+                        >
+                        <p class="card-text">JavaScript Basics</p>
+                        <a html="#" class="btn -primary">
+                          <i class="fa-regular fa-file-lines"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 300px">
+                    <div class="card">
+                      <img
+                        src="/images/overheadIsec.jpeg"
+                        class="card-img-top"
+                        style="max-height: 150px"
+                      />
+                      <div class="card-body">
+                        <a
+                          class="card-title"
+                          href="/Kanbas/Courses/Home/screen.html"
+                          style="
+                            text-decoration: none;
+                            color: navy;
+                            font-weight: bold;
+                          "
+                        >
+                          CS3200 Database Design</a
+                        >
+                        <p class="card-text">Let's design some databases!</p>
+                        <a html="#" class="btn -primary">
+                          <i class="fa-regular fa-file-lines"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 300px">
+                    <div class="card">
+                      <img
+                        src="/images/overheadIsec.jpeg"
+                        class="card-img-top"
+                        style="max-height: 150px"
+                      />
+                      <div class="card-body">
+                        <a
+                          class="card-title"
+                          href="/Kanbas/Courses/Home/screen.html"
+                          style="
+                            text-decoration: none;
+                            color: navy;
+                            font-weight: bold;
+                          "
+                        >
+                          CS4550 Web Dev</a
+                        >
+                        <p class="card-text">Building websites for fun!</p>
+                        <a html="#" class="btn -primary">
+                          <i class="fa-regular fa-file-lines"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 300px">
+                    <div class="card">
+                      <img
+                        src="/images/overheadIsec.jpeg"
+                        class="card-img-top"
+                        style="max-height: 150px"
+                      />
+                      <div class="card-body">
+                        <a
+                          class="card-title"
+                          href="/Kanbas/Courses/Home/screen.html"
+                          style="
+                            text-decoration: none;
+                            color: navy;
+                            font-weight: bold;
+                          "
+                        >
+                          CS4400 Programming Languages</a
+                        >
+                        <p class="card-text">Parsers and Compilers!</p>
+                        <a html="#" class="btn -primary">
+                          <i class="fa-regular fa-file-lines"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 300px">
+                    <div class="card">
+                      <img
+                        src="/images/overheadIsec.jpeg"
+                        class="card-img-top"
+                        style="max-height: 150px"
+                      />
+                      <div class="card-body">
+                        <a
+                          class="card-title"
+                          href="/Kanbas/Courses/Home/screen.html"
+                          style="
+                            text-decoration: none;
+                            color: navy;
+                            font-weight: bold;
+                          "
+                        >
+                          CS3800 Theory of Computations</a
+                        >
+                        <p class="card-text">Theory of Computations</p>
+                        <a html="#" class="btn">
+                          <i class="fa-regular fa-file-lines"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 300px">
+                    <div class="card">
+                      <img
+                        src="/images/overheadIsec.jpeg"
+                        class="card-img-top"
+                        style="max-height: 150px"
+                      />
+                      <div class="card-body">
+                        <a
+                          class="card-title"
+                          href="/Kanbas/Courses/Home/screen.html"
+                          style="
+                            text-decoration: none;
+                            color: navy;
+                            font-weight: bold;
+                          "
+                        >
+                          CS1234 React JS</a
+                        >
+                        <p class="card-text">Full Stack software developer</p>
+                        <a html="#" class="btn -primary">
+                          <i class="fa-regular fa-file-lines"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 300px">
+                    <div class="card">
+                      <img
+                        src="/images/overheadIsec.jpeg"
+                        class="card-img-top"
+                        style="max-height: 150px"
+                      />
+                      <div class="card-body">
+                        <a
+                          class="card-title"
+                          href="/Kanbas/Courses/Home/screen.html"
+                          style="
+                            text-decoration: none;
+                            color: navy;
+                            font-weight: bold;
+                          "
+                        >
+                          CS1234 React JS</a
+                        >
+                        <p class="card-text">Full Stack software developer</p>
+                        <a html="#" class="btn -primary">
+                          <i class="fa-regular fa-file-lines"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 300px">
+                    <div class="card">
+                      <img
+                        src="/images/overheadIsec.jpeg"
+                        class="card-img-top"
+                        style="max-height: 150px"
+                      />
+                      <div class="card-body">
+                        <a
+                          class="card-title"
+                          href="/Kanbas/Courses/Home/screen.html"
+                          style="
+                            text-decoration: none;
+                            color: navy;
+                            font-weight: bold;
+                          "
+                        >
+                          CS1234 React JS</a
+                        >
+                        <p class="card-text">Full Stack software developer</p>
+                        <a html="#" class="btn -primary">
+                          <i class="fa-regular fa-file-lines"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </body>
-  </html>
-  
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
