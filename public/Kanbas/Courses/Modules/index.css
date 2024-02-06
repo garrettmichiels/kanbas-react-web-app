@@ -1,0 +1,32 @@
+.wd-formatted-list,
+.wd-formatted-list * {
+  border-radius: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-formatted-list {
+  margin: 5px;
+}
+
+.wd-formatted-list > li {
+  background-color: lightgray;
+  border: 1px solid gray !important;
+  border-left: none !important;
+}
+
+.wd-formatted-list > li > div {
+  padding: 6px;
+  border-left: 1px solid gray !important;
+}
+
+.wd-formatted-list > li > ul > li {
+  padding: 5px;
+  border-top: 1px solid gray !important;
+  border-left: 2px solid green;
+}
+
+.wd-formatted-list > li {
+  margin-bottom: 20px;
+}
