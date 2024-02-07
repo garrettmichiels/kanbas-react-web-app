@@ -1,21 +1,96 @@
 <html>
-    <head>
+  <head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <!-- <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" /> -->
 
-    </head>
-<body>
-    <h4>Course Status</h4>
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    <button>Unpublish</button>
-                    <button>Publish</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <button>Import Existing Content</button><br/>
-    <button>Import from Commons</button><br/>
-    <button>Choose Home Page</button>
-</body>
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+  </head>
+  <body>
+    <h3>Course Status</h3>
+    <div class="btn-group mb-3" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary" style="background-color: rgba(104, 100, 100, 0.573); border:none; color: black;">Unpublished</button>
+      <button type="button" class="btn btn-primary" style="background-color: rgba(56, 152, 29, 0.573); border:none; color: black;"><i class="fa-regular fa-circle-check"></i>Published</button>
+    </div>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        style="background-color: rgba(104, 100, 100, 0.573)"
+      >
+        <a href="#" class="gm-side-button"
+          ><i class="fa-solid fa-file-import pe-2"></i>Import Existing
+          Content</a
+        >
+      </li>
+      <li
+        class="list-group-item"
+        style="background-color: rgba(104, 100, 100, 0.573)"
+      >
+        <a href="#" class="gm-side-button"
+          ><i class="fa-solid fa-file-import pe-2"></i>Import From Commons</a
+        >
+      </li>
+      <li
+        class="list-group-item"
+        style="background-color: rgba(104, 100, 100, 0.573)"
+      >
+        <a href="#" class="gm-side-button"
+          ><i class="fa-solid fa-house pe-2"></i>Choose Home Page</a
+        >
+      </li>
+      <li
+        class="list-group-item"
+        style="background-color: rgba(104, 100, 100, 0.573)"
+      >
+        <a href="#" class="gm-side-button"
+          ><i class="fa-solid fa-chart-simple pe-2"></i>View Course Stream</a
+        >
+      </li>
+      <li
+        class="list-group-item"
+        style="background-color: rgba(104, 100, 100, 0.573)"
+      >
+        <a href="#" class="gm-side-button"
+          ><i class="fa-solid fa-bullhorn pe-2"></i>New Announcement</a
+        >
+      </li>
+      <li
+        class="list-group-item"
+        style="background-color: rgba(104, 100, 100, 0.573)"
+      >
+        <a href="#" class="gm-side-button"
+          ><i class="fa-solid fa-chart-simple pe-2"></i>New Analytics</a
+        >
+      </li>
+      <li
+        class="list-group-item"
+        style="background-color: rgba(104, 100, 100, 0.573)"
+      >
+        <a href="#" class="gm-side-button"
+          ><i class="fa-regular fa-bell pe-2"></i>View Course Notifications</a
+        >
+      </li>
+    </ul>
+    <h3>Coming Up</h3>
+    <a href="#" class="d-sm-inline-block">View Calendar</a>
+    <hr />
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <a href="#">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a>
+      </li>
+      <li class="list-group-item">
+        <a href="#">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a>
+      </li>
+      <li class="list-group-item">
+        <a href="#">CS5620 06 SP23 Lecture Sep 11 at 6pm</a>
+      </li>
+    </ul>
+  </body>
 </html>
