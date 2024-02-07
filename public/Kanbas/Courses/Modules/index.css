@@ -24,9 +24,18 @@
 .wd-formatted-list > li > ul > li {
   padding: 5px;
   border-top: 1px solid gray !important;
-  border-left: 2px solid green;
+  border-left: 4px solid green;
 }
 
 .wd-formatted-list > li {
   margin-bottom: 20px;
 }
+
+
+
+.gm-side-button {
+  text-decoration: none;
+  color: black;
+}
+
+
