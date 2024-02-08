@@ -1,0 +1,24 @@
+.gm-kanbas-navigation {
+    background-color: white;
+    list-style: none;
+    /* padding: 0px;  margin: 0px; */
+    margin-top: 30;
+
+    height: 70px;
+  }
+  /* .gm-kanbas-navigation li {
+    padding: 10px;     margin-bottom: 10px;
+    font-size: 0.8em;  
+    
+  } */
+  .gm-kanbas-navigation a {
+    color: red;
+    text-decoration: none;
+    
+  }
+  .gm-kanbas-navigation a i {
+    color: red;
+    font-size: 2em;
+    margin-bottom: 5px;
+  }
+  
