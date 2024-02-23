@@ -6,7 +6,8 @@ import Breadcrumbs from "./Breadcrumbs";
 import Modules from "./Modules";
 import Assignments from "./Assignments";
 import Home from "./Home";
-
+import { FaGlasses } from "react-icons/fa";
+import ListButtons from "./Modules/ListButtons";
 
 function Courses() {
   const { courseId } = useParams();
@@ -14,21 +15,49 @@ function Courses() {
   const course = courses.find((course) => course._id === courseId);
   const currentLocation = "test";
   return (
-    <div>
-      <h2 style={{color: "red"}}><HiMiniBars3 style={{color: "red"}}/> <Breadcrumbs /> </h2>
+    <div className="d-flex-col">
+      <div className="d-none d-md-block">
+        <h2 style={{ color: "red" }}>
+          <HiMiniBars3 style={{ color: "red" }} /> {course?.name}
+        </h2>
+
+        <Breadcrumbs />
+        <div className=" position-absolute top-0 end-0">
+          <button
+            type="button"
+            className="float-end btn btn-primary"
+            style={{
+              marginLeft: "10px",
+              marginRight: "10px",
+              backgroundColor: "rgba(104, 100, 100, 0.573)",
+              border: "none",
+              color: "black",
+            }}>
+            <FaGlasses /> Student View
+          </button>
+        </div>
+      </div>
+      <ListButtons />
+      <br></br>
+      <br></br>
+      <hr/>
       <CourseNavigation />
-      
-      <div>
+
+      <div className="flex-fill">
         <div
-          className="overflow-y-scroll position-fixed bottom-0 end-0"
-          style={{ left: "320px", top: "50px" }} >
+          className=" position-absolute bottom-0 end-0"
+          style={{ left: "320px", top: "50px" }}
+        >
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
-            <Route path="Home" element={<Home/>} />
-            <Route path="Modules" element={<Modules/>} />
+            <Route path="Home" element={<Home />} />
+            <Route path="Modules" element={<Modules />} />
             <Route path="Piazza" element={<h1>Piazza</h1>} />
-            <Route path="Assignments" element={<Assignments/>} />
-            <Route path="Assignments/:assignmentId" element={<h1>Assignment Editor</h1>} />
+            <Route path="Assignments" element={<Assignments />} />
+            <Route
+              path="Assignments/:assignmentId"
+              element={<h1>Assignment Editor</h1>}
+            />
             <Route path="Grades" element={<h1>Grades</h1>} />
           </Routes>
         </div>

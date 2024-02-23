@@ -1,6 +1,7 @@
 function CourseStatus() {
     return (
-    <div>
+
+<div>
         <h3>Course Status</h3>
         <div className="btn-group mb-3" role="group" aria-label="Basic example">
           <button type="button" className="btn btn-primary" style={{"backgroundColor": 'rgba(104, 100, 100, 0.573)', "border": 'none', "color": 'black' }}>Unpublished</button>
@@ -13,56 +14,49 @@ function CourseStatus() {
           >
             <a href="#" className="gm-side-button"
               ><i className="fa-solid fa-file-import pe-2"></i>Import Existing
-              Content</a
-            >
+              Content</a>
           </li>
           <li
             className="list-group-item"
             style={{"backgroundColor": "rgba(104, 100, 100, 0.573)"}}
           >
             <a href="#" className="gm-side-button"
-              ><i className="fa-solid fa-file-import pe-2"></i>Import From Commons</a
-            >
+              ><i className="fa-solid fa-file-import pe-2"></i>Import From Commons</a>
           </li>
           <li
             className="list-group-item"
             style={{"backgroundColor": "rgba(104, 100, 100, 0.573)"}}
           >
             <a href="#" className="gm-side-button"
-              ><i className="fa-solid fa-house pe-2"></i>Choose Home Page</a
-            >
+              ><i className="fa-solid fa-house pe-2"></i>Choose Home Page</a>
           </li>
           <li
             className="list-group-item"
             style={{"backgroundColor": "rgba(104, 100, 100, 0.573)"}}
           >
             <a href="#" className="gm-side-button"
-              ><i className="fa-solid fa-chart-simple pe-2"></i>View Course Stream</a
-            >
+              ><i className="fa-solid fa-chart-simple pe-2"></i>View Course Stream</a>
           </li>
           <li
             className="list-group-item"
             style={{"backgroundColor": "rgba(104, 100, 100, 0.573)"}}
           >
             <a href="#" className="gm-side-button"
-              ><i className="fa-solid fa-bullhorn pe-2"></i>New Announcement</a
-            >
+              ><i className="fa-solid fa-bullhorn pe-2"></i>New Announcement</a>
           </li>
           <li
             className="list-group-item"
             style={{"backgroundColor": "rgba(104, 100, 100, 0.573)"}}
           >
             <a href="#" className="gm-side-button"
-              ><i className="fa-solid fa-chart-simple pe-2"></i>New Analytics</a
-            >
+              ><i className="fa-solid fa-chart-simple pe-2"></i>New Analytics</a>
           </li>
           <li
             className="list-group-item"
             style={{"backgroundColor": "rgba(104, 100, 100, 0.573)"}}
           >
             <a href="#" className="gm-side-button"
-              ><i className="fa-regular fa-bell pe-2"></i>View Course Notifications</a
-            >
+              ><i className="fa-regular fa-bell pe-2"></i>View Course Notifications</a>
           </li>
         </ul>
         <h3>Coming Up</h3>
@@ -80,5 +74,6 @@ function CourseStatus() {
           </li>
         </ul>
         </div>
-    )
-    }
+    );
+}
+export default CourseStatus;
