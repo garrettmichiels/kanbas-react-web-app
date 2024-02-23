@@ -13,15 +13,14 @@ function Courses() {
   const { courseId } = useParams();
 
   const course = courses.find((course) => course._id === courseId);
+
   const currentLocation = "test";
   return (
-    <div className="d-flex-col">
+    <div className="d-flex flex-column">
       <div className="d-none d-md-block">
         <h2 style={{ color: "red" }}>
-          <HiMiniBars3 style={{ color: "red" }} /> {course?.name}
+          <HiMiniBars3 style={{ color: "red" }} /> <Breadcrumbs />
         </h2>
-
-        <Breadcrumbs />
         <div className=" position-absolute top-0 end-0">
           <button
             type="button"
@@ -36,18 +35,26 @@ function Courses() {
             <FaGlasses /> Student View
           </button>
         </div>
+        <br></br>
       </div>
-      <ListButtons />
+      
       <br></br>
       <br></br>
-      <hr/>
+      
+      <div className="flex-column">
       <CourseNavigation />
-
-      <div className="flex-fill">
+      <div className="d-flex">
+      
+      <br></br>
+      <hr style={{"marginTop": "30", "marginBottom": "30"}}/>
         <div
           className=" position-absolute bottom-0 end-0"
           style={{ left: "320px", top: "50px" }}
         >
+          <ListButtons />
+          <br></br>
+          <hr style={{"marginTop": "30", "marginBottom": "30"}}/>
+          
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home />} />
@@ -61,6 +68,7 @@ function Courses() {
             <Route path="Grades" element={<h1>Grades</h1>} />
           </Routes>
         </div>
+      </div>
       </div>
     </div>
   );
