@@ -17,7 +17,7 @@ function Courses() {
   const currentLocation = "test";
   return (
     <div className="d-flex flex-column">
-      <div className="d-none d-md-block">
+      <div className="d-md-flex d-none">
         <h2 style={{ color: "red" }}>
           <HiMiniBars3 style={{ color: "red" }} /> <Breadcrumbs />
         </h2>
