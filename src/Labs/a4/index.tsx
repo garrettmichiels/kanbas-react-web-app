@@ -3,6 +3,7 @@ import ClickEvent from "./ClickEvent";
 import PassingDataOnEvent from "./PassingDataOnEvent";
 import PassingFunctions from "./PassingFunctions";
 import EventObject from "./EventObject";
+import CounterRedux from "./CounterRedux";
 
 const Assignment4 = () => {
     function sayHello() {
