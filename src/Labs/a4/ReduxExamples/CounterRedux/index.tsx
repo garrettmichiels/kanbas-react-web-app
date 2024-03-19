@@ -1,9 +1,9 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch} from "react-redux";
 import {increment, decrement, reset} from "./counterReducer";
-import { useDispatch } from "react-redux";
+import { LabState } from "../../store";
 
 function CounterRedux() {
-    const count = useSelector((store: any) => store.counter.count);
+    const { count } = useSelector((state: LabState) => state.counterReducer);
     const dispatch = useDispatch();
     return (
         <div>
@@ -11,7 +11,7 @@ function CounterRedux() {
             <h2>Count: {count}</h2>
             <button onClick={() => dispatch(increment(10))}>Increment</button>
             <button onClick={() => dispatch(decrement(20))}>Decrement</button>
-            <button onClick={() => dispatch(reset(200))}>Reset</button>
+            <button onClick={() => dispatch(reset(0))}>Reset</button>
         </div>
     );
 

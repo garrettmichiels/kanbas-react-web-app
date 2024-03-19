@@ -2,7 +2,7 @@ import {Link, Route, Routes} from "react-router-dom";
 import Nav from "../Nav";
 import Assignment3 from "./a3";
 import Assignment4 from "./a4";
-import store from "./store";
+import store from "./store/index";
 import { Provider } from "react-redux";
 
  function Labs() {

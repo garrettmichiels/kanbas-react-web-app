@@ -9,7 +9,7 @@ import Home from "./Home";
 import { FaGlasses } from "react-icons/fa";
 import ListButtons from "./Modules/ListButtons";
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
 
   const course = courses.find((course) => course._id === courseId);
