@@ -18,13 +18,13 @@ function Courses({ courses }: { courses: any[]; }) {
   return (
     <div className="d-flex flex-column">
       <div className="d-md-flex d-none">
-        <h2 style={{ color: "red" }}>
-          <HiMiniBars3 style={{ color: "red" }} /> <Breadcrumbs />
+        <h2 style={{ color: "red"}}>
+          <HiMiniBars3 style={{ color: "red", "marginTop": "18px", "marginLeft": "10px", "marginRight": "20px" }} /> <Breadcrumbs />
         </h2>
         <div className=" position-absolute top-0 end-0">
           <button
             type="button"
-            className="float-end btn btn-primary"
+            className="float-end btn btn-primary m-2"
             style={{
               marginLeft: "10px",
               marginRight: "10px",

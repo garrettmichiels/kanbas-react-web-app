@@ -13,7 +13,7 @@ function Breadcrumbs() {
     const currentLink = links.find((link) => link === link);
 
     return (
-        <nav className="breadcrumbNav" aria-label="breadcrumb">
+        <nav className="breadcrumbNav" style={{"marginTop": "15px", "position": "absolute", "display": "inline"}} aria-label="breadcrumb">
             <ol className="breadcrumb">
                 <li className="breadcrumb-item">
                     <Link to={`/Kanbas/Courses/${course?._id}`} style={{"textDecoration": "none", "color":"red"}}>{course?.name}</Link>
