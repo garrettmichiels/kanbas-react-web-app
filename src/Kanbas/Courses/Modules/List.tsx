@@ -21,7 +21,6 @@ function ModuleList() {
 
   return (
     <>
-      
         <input className="form-control ml-2" style={{width:"fit-content"}} value={module.name}
           onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}/>
         <textarea className="form-control" style={{width:"fit-content"}} value={module.description}
@@ -67,7 +66,7 @@ function ModuleList() {
                 <FaEllipsisV className="ms-2" />
               </span>
             </div>
-            {/* {module._id === module._id && (
+            {module._id === module._id && (
               <ul className="list-group">
                 {module.lessons?.map((lesson, index) => (
                   <li className="list-group-item" key={index}>
@@ -80,7 +79,7 @@ function ModuleList() {
                   </li>
                 ))}
               </ul>
-            )} */}
+            )}
           </li>
         ))}
       </ul>
